@@ -41,36 +41,6 @@
     </script>
 </head>
 <body>
-    <style>
-        .blog-post-header { background: #f8f9fa; padding: 3rem 0 2rem; }
-        .blog-post-header .container { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
-        .blog-post-header h1 { font-size: 2.5rem; margin: 1rem 0; color: #2C3E50; line-height: 1.2; }
-        .blog-post-header .post-excerpt { font-size: 1.25rem; color: #5A6C7D; margin-top: 1rem; }
-        .post-meta { display: flex; gap: 0.5rem; align-items: center; color: #7A8C9E; font-size: 0.9rem; margin-bottom: 1rem; }
-        .post-category { background: #7AB8A8; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; }
-        .blog-post-content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
-        .blog-post-content h2 { color: #2C3E50; font-size: 2rem; margin: 3rem 0 1.5rem; border-bottom: 2px solid #7AB8A8; padding-bottom: 0.5rem; }
-        .blog-post-content h3 { color: #2C3E50; font-size: 1.5rem; margin: 2rem 0 1rem; }
-        .blog-post-content p { color: #5A6C7D; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
-        .blog-post-content ul, .blog-post-content ol { margin: 1.5rem 0; padding-left: 2rem; }
-        .blog-post-content li { color: #5A6C7D; line-height: 1.8; margin-bottom: 0.75rem; }
-        .blog-post-content strong { color: #2C3E50; font-weight: 600; }
-        .blog-post-content table { width: 100%; border-collapse: collapse; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .blog-post-content th { background: #5B9AA9; color: white; padding: 1rem; text-align: left; }
-        .blog-post-content td { padding: 1rem; border-bottom: 1px solid #e5e7eb; }
-        .blog-post-content tr:nth-child(even) { background: #f8f9fa; }
-        .blog-cta-box { background: linear-gradient(135deg, #5B9AA9 0%, #4A8596 100%); color: white; padding: 3rem; border-radius: 12px; text-align: center; margin: 3rem 0; }
-        .blog-cta-box h3 { color: white; margin-bottom: 1rem; font-size: 1.75rem; }
-        .blog-cta-box p { color: white; opacity: 1; margin-bottom: 2rem; font-size: 1.125rem; }
-        .blog-cta-box .button, .button { background: white; color: #5B9AA9; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.3s ease; }
-        .blog-cta-box .button:hover, .button:hover { transform: scale(1.05); }
-        .blog-related-posts { margin-top: 4rem; }
-        .blog-related-posts h3 { color: #2C3E50; font-size: 1.75rem; margin-bottom: 1.5rem; }
-        .blog-related-posts ul { list-style: none; padding: 0; }
-        .blog-related-posts li { margin-bottom: 1rem; }
-        .blog-related-posts a { color: #5B9AA9; text-decoration: none; font-weight: 600; font-size: 1.125rem; }
-        .blog-related-posts a:hover { color: #4A8596; text-decoration: underline; }
-    </style>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -95,21 +65,35 @@
         </div>
     </nav>
 
-    <!-- Article -->
+    <!-- Blog Post Header -->
     <section class="blog-post-header">
         <div class="container">
-            <header class="blog-post-header">
-                <div class="post-meta">
-                    <span class="post-category">Men's Health</span>
-                    <time datetime="2025-01-27">January 27, 2025</time>
-                    <span>•</span>
-                    <span>10 min read</span>
-                </div>
-                <h1>Incontinence After Prostate Surgery: What to Expect and How to Recover</h1>
-                <p class="post-excerpt">You just had prostate surgery and now you're leaking. Your surgeon said it would improve, but when? And what if it doesn't? Here's an honest guide to post-prostatectomy incontinence and effective treatment options.</p>
-            </header>
+            <div class="breadcrumbs">
+                <a href="../index.html">Home</a>
+                <span>/</span>
+                <a href="../blog.html">Blog</a>
+                <span>/</span>
+                <span>Male Incontinence After Prostate Surgery</span>
+            </div>
+            
+            <span class="post-category">Men's Health</span>
+            
+            <h1>Incontinence After Prostate Surgery: What to Expect and How to Recover</h1>
+            
+            <div class="post-meta">
+                <time datetime="2025-01-27">January 27, 2025</time>
+                <span>•</span>
+                <span>10 min read</span>
+                <span>•</span>
+                <span>By Dr. Josh</span>
+            </div>
+            
+            <p class="hero-subtitle">You just had prostate surgery and now you're leaking. Your surgeon said it would improve, but when? And what if it doesn't? Here's an honest guide to post-prostatectomy incontinence and effective treatment options.</p>
+        </div>
+    </section>
 
-            <div class="blog-post-content">
+    <!-- Blog Post Content -->
+    <article class="blog-post-content">
                 
                 <p><strong>First, the reality:</strong> Incontinence after prostate surgery is extremely common. Depending on the type of surgery and your surgeon's skill, anywhere from 10-70% of men experience urinary leakage after prostatectomy. You're not alone, and it's treatable.</p>
 
@@ -364,30 +348,77 @@
                     <p style="margin-top: 1rem; font-size: 0.9rem;">Located in Bay View, Milwaukee • (414) 295-6045</p>
                 </div>
 
-                <!-- Related Posts -->
-                <div class="blog-related-posts">
-                    <h3>Related Articles</h3>
-                    <ul>
-                        <li><a href="../emsella-therapy.html">Emsella Therapy: Complete Guide</a></li>
-                        <li><a href="emsella-vs-kegels.html">Emsella vs Kegel Exercises</a></li>
-                        <li><a href="can-incontinence-be-cured.html">Can Incontinence Be Cured?</a></li>
-                        <li><a href="../types.html">Types of Incontinence</a></li>
-                    </ul>
-                </div>
-
+        <!-- Author Bio -->
+        <div class="author-bio">
+            <div class="author-avatar">DJ</div>
+            <div class="author-info">
+                <h4>Dr. Josh</h4>
+                <p>Dr. Josh is a chiropractor with 15 years of experience and owner of Incontinence.support in Milwaukee's Bay View neighborhood. He specializes in Emsculpt NEO body contouring and Emsella pelvic floor therapy, combining cutting-edge technology with personalized care.</p>
             </div>
         </div>
-    </section>
 
-    <article class="blog-post-content">
-        <div class="container">
+                <!-- Related Posts -->
+        <div class="related-posts">
+            <h3>Related Articles</h3>
+            <div class="related-posts-grid">
+                <article class="blog-card">
+                    <div class="blog-card-content" style="padding: var(--spacing-md);">
+                        <h3><a href="../emsella-therapy.html">Emsella Therapy: Complete Guide</a></h3>
+                        <p class="blog-card-excerpt">Everything you need to know about Emsella treatment.</p>
+                        <a href="../emsella-therapy.html" class="read-more">Learn More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card-content" style="padding: var(--spacing-md);">
+                        <h3><a href="emsella-vs-kegels.html">Emsella vs Kegel Exercises</a></h3>
+                        <p class="blog-card-excerpt">Clinical comparison of treatment options.</p>
+                        <a href="emsella-vs-kegels.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-card-content" style="padding: var(--spacing-md);">
+                        <h3><a href="can-incontinence-be-cured.html">Can Incontinence Be Cured?</a></h3>
+                        <p class="blog-card-excerpt">Treatment options and what actually works.</p>
+                        <a href="can-incontinence-be-cured.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
         </div>
+
     </article>
 
     <!-- Footer -->
-    <footer style="background: #2C3E50; color: white; padding: 3rem 0; text-align: center;">
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Incontinence.support. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Incontinence.support</h4>
+                    <p>Bay View's expert body transformation and wellness center.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="../emsella-therapy.html">Emsella Therapy</a></li>
+                        <li><a href="../emsella-therapy.html">Treatment</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../index.html#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Phone: (414) 295-6045<br>
+                    Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6e0700080139281b1d0e0f10171912">[email&#160;protected]</a><br>
+                    <br>
+                    Located inside <a href="https://bayviewmkechiro.com" target="_blank" rel="noopener" style="color: #7AB8A8; text-decoration: underline;">Bay View Chiropractic</a><br>
+                    3116 S Kinnickinnick Ave<br>
+                    Milwaukee, WI 53207<br>
+                    <br>
+                    <span style="font-size: 0.875rem; color: #7AB8A8;">Serving Milwaukee, Waukesha, Pewaukee, Brookfield, Wauwatosa & surrounding areas</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Incontinence.support. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
