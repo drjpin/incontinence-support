@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8S1H3TKY3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-8S1H3TKY3G');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trusted information about urinary incontinence, causes, types, and treatment options. You're not alone - 1 in 3 women experience bladder control issues.">
+    <title>Understanding Incontinence | Trusted Resource for Bladder Control</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Schema Markup for Website -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Incontinence.support",
+      "url": "https://incontinence.support",
+      "description": "Trusted information about urinary incontinence, causes, types, and treatment options",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Incontinence.support"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://incontinence.support/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Incontinence.support",
+      "url": "https://incontinence.support",
+      "logo": "https://incontinence.support/logo.png",
+      "description": "Educational resource for urinary incontinence information and treatment options. Treatment provided by Bay View Chiropractic in Milwaukee, Wisconsin."
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #5B9AA9;
+            --accent-color: #7AB8A8;
+            --text-dark: #2C3E50;
+            --text-medium: #5A6C7D;
+            --text-light: #8B97A3;
+            --bg-light: #F8FAFB;
+            --bg-accent: #EEF5F7;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4A8596 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-section p {
+            font-size: 1.25rem;
+            opacity: 1;
+            color: white;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .hero-buttons .button {
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hero-buttons .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .hero-buttons .button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .hero-buttons .button.secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        .reassurance-section {
+            background: var(--bg-accent);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .reassurance-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .reassurance-section p {
+            font-size: 1.125rem;
+            color: var(--text-medium);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .navigation-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+        
+        .nav-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        
+        .nav-card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .nav-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .nav-card p {
+            color: var(--text-medium);
+            margin: 0;
+        }
+        
+        .featured-post {
+            background: var(--bg-light);
+            padding: 4rem 0;
+        }
+        
+        .featured-post-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .featured-post-text h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .featured-post-text h3 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .featured-post-text p {
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .featured-post-image {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+        
+        .featured-post-image h4 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #4A8596 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            color: white;
+            opacity: 1;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-section .button {
+            background: white;
+            color: var(--primary-color);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-section .button:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+            
+            .featured-post-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .navigation-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Understanding Incontinence</h1>
+            <p style="opacity: 1 !important;">Your trusted resource for bladder control information and treatment options. Honest answers, real solutions.</p>
+            <div class="hero-buttons">
+                <a href="#learn-more" class="button">Learn About Incontinence</a>
+                <a href="find-treatment-milwaukee.html" class="button secondary">Find Treatment in Milwaukee</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reassurance Section -->
+    <section class="reassurance-section">
+        <div class="container">
+            <h2>You're Not Alone</h2>
+            <p><strong>1 in 3 women experience urinary incontinence.</strong> It's common, treatable, and nothing to be embarrassed about. Whether it's a small leak when you cough or more frequent issues, there are proven solutions that can help you regain confidence and control.</p>
+        </div>
+    </section>
+
+    <!-- Navigation Cards -->
+    <section id="learn-more">
+        <div class="container">
+            <div class="navigation-cards">
+                <a href="types.html" class="nav-card">
+                    <div class="nav-card-icon">📋</div>
+                    <h3>Understand It</h3>
+                    <p>Learn about different types of incontinence, what causes them, and why they happen.</p>
+                </a>
+                
+                <a href="treatment-overview.html" class="nav-card">
+                    <div class="nav-card-icon">💊</div>
+                    <h3>Treat It</h3>
+                    <p>Explore proven treatment options from exercises to advanced therapy and surgery.</p>
+                </a>
+                
+                <a href="blog.html" class="nav-card">
+                    <div class="nav-card-icon">📚</div>
+                    <h3>Read About It</h3>
+                    <p>Browse articles answering your specific questions about bladder control and recovery.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post -->
+    <section class="featured-post">
+        <div class="container">
+            <div class="featured-post-content">
+                <div class="featured-post-text">
+                    <h2>Featured Article</h2>
+                    <h3>Incontinence When Coughing: Causes and Solutions</h3>
+                    <p>You're laughing with friends and suddenly... a leak. Or you cough during a meeting and panic. If coughing (or sneezing, laughing, or any sudden movement) causes bladder leaks, you have stress incontinence — and it's highly treatable.</p>
+                    <p>Learn why it happens, who gets it, and most importantly — how to fix it.</p>
+                    <a href="blog/incontinence-when-coughing.html" class="button">Read Full Article →</a>
+                </div>
+                
+                <div class="featured-post-image">
+                    <h4>Most Read This Week</h4>
+                    <p style="font-size: 3rem; margin: 1rem 0;">720</p>
+                    <p>women searched for this topic this month</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Articles Preview -->
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; color: var(--primary-color); margin-bottom: 3rem;">More Articles</h2>
+            
+            <div class="navigation-cards">
+                <a href="blog/can-incontinence-be-cured.html" class="nav-card" style="text-align: left;">
+                    <h3>Can Incontinence Be Cured?</h3>
+                    <p>Exploring modern treatment options for urinary incontinence. From pelvic floor therapy to Emsella, learn what works and what doesn't.</p>
+                    <span style="color: var(--primary-color); font-weight: 600; margin-top: 1rem; display: inline-block;">Read More →</span>
+                </a>
+                
+                <a href="blog.html" class="nav-card" style="text-align: left;">
+                    <h3>View All Articles</h3>
+                    <p>Browse our complete library of incontinence information, treatment guides, and recovery stories.</p>
+                    <span style="color: var(--primary-color); font-weight: 600; margin-top: 1rem; display: inline-block;">See All →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Help in Milwaukee?</h2>
+            <p>Bay View Chiropractic offers Emsella pelvic floor therapy — a proven, non-invasive treatment that helps 95% of patients improve their bladder control.</p>
+            <a href="find-treatment-milwaukee.html" class="button">Schedule Free Consultation</a>
+            <p style="margin-top: 1rem; font-size: 0.875rem; opacity: 1;">Located in Bay View, Milwaukee • Serving the entire Milwaukee area</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #2C3E50; color: white; padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <h3 style="color: white; margin-bottom: 1rem;">Incontinence.support</h3>
+            <p style="max-width: 600px; margin: 0 auto 2rem; opacity: 1;">
+                Providing trusted, evidence-based information about urinary incontinence. 
+                This site is for educational purposes and does not replace medical advice.
+            </p>
+            <div style="margin-bottom: 2rem;">
+                <a href="types.html" style="color: var(--accent-color); margin: 0 1rem;">Types</a>
+                <a href="treatment-overview.html" style="color: var(--accent-color); margin: 0 1rem;">Treatments</a>
+                <a href="blog.html" style="color: var(--accent-color); margin: 0 1rem;">Blog</a>
+                <a href="find-treatment-milwaukee.html" style="color: var(--accent-color); margin: 0 1rem;">Get Help</a>
+            </div>
+            <p style="font-size: 0.875rem; opacity: 1;">&copy; 2024 Incontinence.support. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

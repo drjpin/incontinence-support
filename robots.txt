@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://incontinence.support/sitemap.xml
+
+# Block access to admin/config if you add them later
+Disallow: /admin/
+Disallow: /config/
