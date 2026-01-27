@@ -41,6 +41,36 @@
     </script>
 </head>
 <body>
+    <style>
+        .blog-post-header { background: #f8f9fa; padding: 3rem 0 2rem; }
+        .blog-post-header .container { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+        .blog-post-header h1 { font-size: 2.5rem; margin: 1rem 0; color: #2C3E50; line-height: 1.2; }
+        .blog-post-header .post-excerpt { font-size: 1.25rem; color: #5A6C7D; margin-top: 1rem; }
+        .post-meta { display: flex; gap: 0.5rem; align-items: center; color: #7A8C9E; font-size: 0.9rem; margin-bottom: 1rem; }
+        .post-category { background: #7AB8A8; color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; }
+        .blog-post-content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+        .blog-post-content h2 { color: #2C3E50; font-size: 2rem; margin: 3rem 0 1.5rem; border-bottom: 2px solid #7AB8A8; padding-bottom: 0.5rem; }
+        .blog-post-content h3 { color: #2C3E50; font-size: 1.5rem; margin: 2rem 0 1rem; }
+        .blog-post-content p { color: #5A6C7D; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.125rem; }
+        .blog-post-content ul, .blog-post-content ol { margin: 1.5rem 0; padding-left: 2rem; }
+        .blog-post-content li { color: #5A6C7D; line-height: 1.8; margin-bottom: 0.75rem; }
+        .blog-post-content strong { color: #2C3E50; font-weight: 600; }
+        .blog-post-content table { width: 100%; border-collapse: collapse; margin: 2rem 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .blog-post-content th { background: #5B9AA9; color: white; padding: 1rem; text-align: left; }
+        .blog-post-content td { padding: 1rem; border-bottom: 1px solid #e5e7eb; }
+        .blog-post-content tr:nth-child(even) { background: #f8f9fa; }
+        .blog-cta-box { background: linear-gradient(135deg, #5B9AA9 0%, #4A8596 100%); color: white; padding: 3rem; border-radius: 12px; text-align: center; margin: 3rem 0; }
+        .blog-cta-box h3 { color: white; margin-bottom: 1rem; font-size: 1.75rem; }
+        .blog-cta-box p { color: white; opacity: 1; margin-bottom: 2rem; font-size: 1.125rem; }
+        .blog-cta-box .button, .button { background: white; color: #5B9AA9; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: transform 0.3s ease; }
+        .blog-cta-box .button:hover, .button:hover { transform: scale(1.05); }
+        .blog-related-posts { margin-top: 4rem; }
+        .blog-related-posts h3 { color: #2C3E50; font-size: 1.75rem; margin-bottom: 1.5rem; }
+        .blog-related-posts ul { list-style: none; padding: 0; }
+        .blog-related-posts li { margin-bottom: 1rem; }
+        .blog-related-posts a { color: #5B9AA9; text-decoration: none; font-weight: 600; font-size: 1.125rem; }
+        .blog-related-posts a:hover { color: #4A8596; text-decoration: underline; }
+    </style>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -66,9 +96,9 @@
     </nav>
 
     <!-- Article -->
-    <article class="blog-post">
+    <section class="blog-post-header">
         <div class="container">
-            <header class="post-header">
+            <header class="blog-post-header">
                 <div class="post-meta">
                     <span class="post-category">Postpartum</span>
                     <time datetime="2025-01-27">January 27, 2025</time>
@@ -79,7 +109,7 @@
                 <p class="post-excerpt">You just had a baby, and now you're leaking when you laugh, sneeze, or lift your newborn. Is this normal? Will it get better? Here's everything you need to know about postpartum incontinence and how to recover.</p>
             </header>
 
-            <div class="post-content">
+            <div class="blog-post-content">
                 
                 <p><strong>First, let's be clear:</strong> Bladder leaks after pregnancy are incredibly common. Between 30-50% of women experience some form of urinary incontinence in the months following childbirth. You're not broken, you're not alone, and most importantly — it's treatable.</p>
 
@@ -320,7 +350,7 @@
                 <p>You deserve to feel comfortable in your own body. Don't wait years hoping it gets better. Take action now.</p>
 
                 <!-- CTA Section -->
-                <div class="cta-box">
+                <div class="blog-cta-box">
                     <h3>Get Treatment in Milwaukee</h3>
                     <p>Bay View Chiropractic offers Emsella pelvic floor therapy specifically designed for postpartum recovery. Fast results, minimal time commitment, and you can bring your baby to appointments.</p>
                     <a href="../find-treatment-milwaukee.html" class="button">Schedule Free Consultation</a>
@@ -328,7 +358,7 @@
                 </div>
 
                 <!-- Related Posts -->
-                <div class="related-posts">
+                <div class="blog-related-posts">
                     <h3>Related Articles</h3>
                     <ul>
                         <li><a href="incontinence-when-coughing.html">Incontinence When Coughing: Causes and Solutions</a></li>
@@ -339,6 +369,11 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <article class="blog-post-content">
+        <div class="container">
         </div>
     </article>
 
