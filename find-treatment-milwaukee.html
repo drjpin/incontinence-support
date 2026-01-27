@@ -87,6 +87,117 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
+        
+        /* Navigation Styles */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo-container a {
+            text-decoration: none;
+        }
+        
+        .logo-container h2 {
+            color: #2C5F6F;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: #2C5F6F;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: #2C5F6F;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #5B9AA9;
+        }
+        
+        .nav-links .cta-button {
+            background: #5B9AA9;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        
+        .nav-links .cta-button:hover {
+            background: #4A8596;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                gap: 0;
+                padding: 1rem 0;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                display: none;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                width: 100%;
+                text-align: center;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid #f0f0f0;
+            }
+            
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+        }
+
         :root {
             --primary-color: #5B9AA9;
             --accent-color: #7AB8A8;
@@ -307,6 +418,33 @@
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <a href="index.html" style="text-decoration: none;">
+                        <h2 style="margin: 0; color: #2C5F6F; font-size: 1.5rem;">Incontinence.support</h2>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="types.html">Types</a></li>
+                    <li><a href="treatment-overview.html">Treatments</a></li>
+                    <li><a href="emsella-therapy.html">Emsella</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="find-treatment-milwaukee.html" class="cta-button">Get Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <!-- Hero -->
     <section class="hero">
         <div class="container">
