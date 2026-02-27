@@ -32,6 +32,14 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- FAQ Page -->
+  <url>
+    <loc>https://incontinence.support/faq.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- About Page -->
   <url>
     <loc>https://incontinence.support/about.html</loc>
